@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-course-assessments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fahimforhad496/nodejs-course-assessments.git"
+  },
+  "author": "fahim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fahimforhad496/nodejs-course-assessments/issues"
+  },
+  "homepage": "https://github.com/Fahimforhad496/nodejs-course-assessments#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "lowdb": "^1.0.0"
+  }
+}
