@@ -1,24 +1,24 @@
-let users = [];
+let userRepository = require('./user.service');
 
 function getUsers() {
-  return users;
+    return userRepository.getUsers();
 }
 
 function getUser(id) {
-  return users.find((user) => user.id === Number(id));
+    return userRepository.getUserById(id);
 }
 
-function createUser(user) {
-  users.push(user);
+function createUser(product) {
+    return userRepository.createUser(product);
 }
 
 function deleteUser(id) {
-  users = users.filter((user) => Number(id) !== user.id);
+    return userRepository.deleteUserById(id);
 }
 
 module.exports = {
-  getUser,
-  getUsers,
-  createUser,
-  deleteUser,
+        getUsers,
+        getUser,
+        createUser,
+        deleteUser,
 };

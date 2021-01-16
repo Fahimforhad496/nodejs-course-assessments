@@ -1,19 +1,19 @@
-let products = [];
+let productService = require('./product.service');
 
 function getProducts() {
-  return products;
+  return productService.getProducts();
 }
 
 function getProduct(id) {
-  return products.find((prod) => prod.id === Number(id));
+  return productService.getProductById(id);
 }
 
 function createProduct(product) {
-  products.push(product);
+  return productService.createProduct(product);
 }
 
 function deleteProduct(id) {
-  products = products.filter((product) => Number(id) !== product.id);
+  return productService.deleteProductById(id);
 }
 
 module.exports = {

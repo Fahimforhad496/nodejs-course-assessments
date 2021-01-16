@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "egg"
+    },
+    {
+      "id": 2,
+      "name": "cake"
+    }
+  ],
+  "users": [
+    {
+      "id": 7,
+      "name": "freya k"
+    },
+    {
+      "id": 1,
+      "name": "fahim"
+    }
+  ]
+}
